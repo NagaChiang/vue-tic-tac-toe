@@ -1,25 +1,36 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div id="app" class="columns is-centered">
+    <div class="column is-6">
+      <Grid />
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
+import Buefy from 'buefy';
+import 'buefy/dist/buefy.css';
+import Grid from '@/components/Grid.vue';
 
 @Component({
   components: {
-    HelloWorld,
+    Grid,
   },
 })
+
 export default class App extends Vue {}
+App.use(Buefy);
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html {
+  background-color: #555555;
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
