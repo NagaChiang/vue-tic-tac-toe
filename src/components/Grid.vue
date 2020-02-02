@@ -65,8 +65,9 @@ export default class Grid extends Vue {
       this.highlightedTilePoints = connectionPoints;
       setTimeout(() => { this.isReadyToHighlight = true; }, 1000);
 
-      const firstPoint = connectionPoints[0];
-      this.$emit('gameOver', this.tileMatrix[firstPoint.x][firstPoint.y]);
+      const firstPoint: Point = connectionPoints[0];
+      const winner: TileValueTypes = firstPoint ? this.tileMatrix[firstPoint.x][firstPoint.y] : TileValueTypes.None;
+      this.$emit('gameOver', winner);
     }
   }
 
