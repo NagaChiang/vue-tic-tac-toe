@@ -48,6 +48,7 @@ export {
 
 <style scoped>
 .tile {
+  display: flex;
   background-color: #f7d08a;
   width: 100px;
   height: 100px;
@@ -64,7 +65,6 @@ export {
 }
 
 .fa-circle, .fa-times {
-  margin: auto;
   color: #f79f79;
   transition: transform 0.2s;
 }
