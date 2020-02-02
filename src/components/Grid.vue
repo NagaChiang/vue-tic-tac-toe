@@ -72,7 +72,7 @@ export default class Grid extends Vue {
 
   public reset(): void {
     this.isGameOver = false;
-    this.currentPlayerTile = TileValueTypes.O;
+    this.currentPlayerTile = TileValueTypes.X;
     this.highlightedTilePoints = [];
     this.isReadyToHighlight = false;
 
