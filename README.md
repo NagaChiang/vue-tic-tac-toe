@@ -2,6 +2,10 @@
 
 ![Github Pages](https://github.com/NagaChiang/vue-tic-tac-toe/workflows/Github%20Pages/badge.svg)
 
+## Demo
+
+https://nagachiang.github.io/vue-tic-tac-toe
+
 ## Project setup
 ```
 npm install
