@@ -1,5 +1,7 @@
 # vue-tic-tac-toe
 
+![Github Pages](https://github.com/NagaChiang/vue-tic-tac-toe/workflows/Github%20Pages/badge.svg)
+
 ## Project setup
 ```
 npm install
